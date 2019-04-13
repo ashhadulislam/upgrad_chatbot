@@ -1,0 +1,37 @@
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x14bd95be0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005

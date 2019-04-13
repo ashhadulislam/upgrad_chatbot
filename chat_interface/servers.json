@@ -1,0 +1,17 @@
+{
+	"serverPaths":
+	{
+		"rasaModels":
+		{
+			"mainAIModel":"http://localhost:5001/",
+			"flightAIModel":"http://localhost:5003/",
+			"VPAAIModel":"http://localhost:5005/"
+
+
+		},
+		"APIpoints":{
+			"goIbiboServer":"http://localhost:5002/"
+		}
+
+	}
+}

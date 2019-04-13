@@ -1,0 +1,104 @@
+slots:
+  location:
+    type: text
+  cuisine:
+    type: categorical
+    values:
+    - chinese
+    - italian
+    - north indian
+    - south indian
+    - american
+    - mexican
+  email:
+    type: text
+  location_found:
+    type: categorical
+    values:
+    - notfound
+    - tier3
+    - found
+  price:
+    type: categorical
+    values:
+    - lesser than 300
+    - between 300 to 700
+    - more than 700
+
+entities:
+- location
+- cuisine
+- email
+- price
+
+intents:
+ - greet
+ - affirm
+ - deny
+ - goodbye
+ - thankyou
+ - restaurant_search
+
+
+templates:
+  utter_greet:
+    - "hey there! How may i help you"
+    - "Hi, How can I help you!"
+    - "Hey, How is it going. How May I help you Today"
+  utter_goodbye:
+    - "goodbye :("
+    - "Bye-bye"
+  utter_default:
+    - "default message"
+  utter_ask_cuisine: 
+    - text: "What kind of cuisine would you like to have \n 1. Chinese \n 2. Italian \n 3. South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
+      # buttons:
+      # - title: "Chinese"
+      #   payload: "chinese"
+      # - title: "Italian"
+      #   payload: "italian"
+      # - title: "North Indian"
+      #   payload: "north indian"
+      # - title: "Thai"
+      #   payload: "thai"
+      # - title: "American"
+      #   payload: "american"
+  utter_ask_price: 
+    - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between 300 and 700\n3. More than 700"
+      # buttons:
+      # - title: "lesser than 300"
+      #   payload: "lesser than 300"
+      # - title: "between 300 to 700"
+      #   payload: "between 300 to 700"
+      # - title: "more than 700"
+      #   payload: "more than 700"
+  utter_ask_howcanhelp:
+    - "how can I help you?"
+  utter_location_notfound:
+    - "Sorry, location not found. Please specify the location again"
+  utter_foodie_not_working:
+    - "Sorry, Foodie is not working in this area. Can you please suggest some other location"
+  utter_ask_location:
+    - "In what location?"
+  utter_ask_mail:
+    - "To what email address should I send the restaurant details"
+    - "Share the recipient email address"
+  utter_final_bye:
+    - "Okay!Bon Appetit!"
+
+    
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_mail
+- utter_ask_price
+- utter_final_bye
+- action_restaurant
+- email_restaurant_details
+- action_check_location
+- utter_location_notfound
+- utter_foodie_not_working

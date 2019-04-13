@@ -1,0 +1,101 @@
+2018-02-20T14:51:34.182631+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-02-20T14:51:34.206681+00:00 app[web.1]: [2018-02-20 14:51:34 +0000] [4] [INFO] Handling signal: term
+2018-02-20T14:51:34.208165+00:00 app[web.1]: [2018-02-20 14:51:34 +0000] [8] [INFO] Worker exiting (pid: 8)
+2018-02-20T14:51:34.213902+00:00 app[web.1]: [2018-02-20 14:51:34 +0000] [9] [INFO] Worker exiting (pid: 9)
+2018-02-20T14:51:34.747865+00:00 app[web.1]: [2018-02-20 14:51:34 +0000] [4] [INFO] Shutting down: Master
+2018-02-20T14:51:34.943703+00:00 heroku[web.1]: Process exited with status 0
+2018-02-20T14:51:37.179509+00:00 heroku[web.1]: Starting process with command `gunicorn deploy:app`
+2018-02-20T14:51:40.050189+00:00 heroku[web.1]: State changed from starting to up
+2018-02-20T14:51:39.760049+00:00 app[web.1]: [2018-02-20 14:51:39 +0000] [4] [INFO] Starting gunicorn 19.7.1
+2018-02-20T14:51:39.761092+00:00 app[web.1]: [2018-02-20 14:51:39 +0000] [4] [INFO] Listening at: http://0.0.0.0:32077 (4)
+2018-02-20T14:51:39.761312+00:00 app[web.1]: [2018-02-20 14:51:39 +0000] [4] [INFO] Using worker: sync
+2018-02-20T14:51:39.768030+00:00 app[web.1]: [2018-02-20 14:51:39 +0000] [8] [INFO] Booting worker with pid: 8
+2018-02-20T14:51:39.855650+00:00 app[web.1]: [2018-02-20 14:51:39 +0000] [9] [INFO] Booting worker with pid: 9
+2018-02-20T14:52:42.762895+00:00 app[web.1]: Here at least
+2018-02-20T14:52:42.827836+00:00 app[web.1]: 10.13.219.114 - - [20/Feb/2018:14:52:42 +0000] "GET / HTTP/1.1" 200 3155 "https://dashboard.heroku.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:52:42.828196+00:00 heroku[router]: at=info method=GET path="/" host=pure-beach-92745.herokuapp.com request_id=2a6d9043-dc7f-4944-99a9-2910deae66cb fwd="192.140.155.13" dyno=web.1 connect=1ms service=71ms status=200 bytes=3349 protocol=https
+2018-02-20T14:52:43.226249+00:00 heroku[router]: at=info method=GET path="/static/css/chat_interface.css" host=pure-beach-92745.herokuapp.com request_id=00769652-ecfb-401b-943a-2f8a032a425f fwd="192.140.155.13" dyno=web.1 connect=1ms service=28ms status=200 bytes=5360 protocol=https
+2018-02-20T14:52:43.246797+00:00 heroku[router]: at=info method=GET path="/static/css/temporary.css" host=pure-beach-92745.herokuapp.com request_id=4dc7a540-55b5-43e8-97e6-e41cd28a5326 fwd="192.140.155.13" dyno=web.1 connect=1ms service=43ms status=200 bytes=670 protocol=https
+2018-02-20T14:52:43.225554+00:00 app[web.1]: 10.13.219.114 - - [20/Feb/2018:14:52:43 +0000] "GET /static/css/chat_interface.css HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:52:43.228641+00:00 app[web.1]: 10.13.221.137 - - [20/Feb/2018:14:52:43 +0000] "GET /static/js/bind.js HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:52:43.246368+00:00 app[web.1]: 10.111.178.156 - - [20/Feb/2018:14:52:43 +0000] "GET /static/css/temporary.css HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:52:43.229400+00:00 heroku[router]: at=info method=GET path="/static/js/bind.js" host=pure-beach-92745.herokuapp.com request_id=372c4b43-d36f-4814-9c06-18ac57bc815b fwd="192.140.155.13" dyno=web.1 connect=1ms service=25ms status=200 bytes=2787 protocol=https
+2018-02-20T14:52:43.752654+00:00 app[web.1]: 10.30.65.228 - - [20/Feb/2018:14:52:43 +0000] "GET /static/js/script.js HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:52:43.753602+00:00 heroku[router]: at=info method=GET path="/static/js/script.js" host=pure-beach-92745.herokuapp.com request_id=f4ce2560-c955-4e01-a540-6c210577841f fwd="192.140.155.13" dyno=web.1 connect=2ms service=8ms status=200 bytes=5891 protocol=https
+2018-02-20T14:56:42.000000+00:00 app[api]: Build started by user ashhadulislam@gmail.com
+2018-02-20T14:56:58.913264+00:00 app[api]: Deploy f8e8d86d by user ashhadulislam@gmail.com
+2018-02-20T14:56:58.913264+00:00 app[api]: Release v17 created by user ashhadulislam@gmail.com
+2018-02-20T14:56:42.000000+00:00 app[api]: Build succeeded
+2018-02-20T14:56:59.544909+00:00 heroku[web.1]: Restarting
+2018-02-20T14:56:59.545897+00:00 heroku[web.1]: State changed from up to starting
+2018-02-20T14:57:00.287201+00:00 app[web.1]: [2018-02-20 14:57:00 +0000] [4] [INFO] Handling signal: term
+2018-02-20T14:57:00.287212+00:00 app[web.1]: [2018-02-20 14:57:00 +0000] [8] [INFO] Worker exiting (pid: 8)
+2018-02-20T14:57:00.287214+00:00 app[web.1]: [2018-02-20 14:57:00 +0000] [9] [INFO] Worker exiting (pid: 9)
+2018-02-20T14:57:00.387593+00:00 app[web.1]: [2018-02-20 14:57:00 +0000] [4] [INFO] Shutting down: Master
+2018-02-20T14:57:00.278224+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-02-20T14:57:00.495787+00:00 heroku[web.1]: Process exited with status 0
+2018-02-20T14:57:04.072132+00:00 heroku[web.1]: Starting process with command `gunicorn deploy:app`
+2018-02-20T14:57:06.609607+00:00 app[web.1]: [2018-02-20 14:57:06 +0000] [4] [INFO] Starting gunicorn 19.7.1
+2018-02-20T14:57:06.610484+00:00 app[web.1]: [2018-02-20 14:57:06 +0000] [4] [INFO] Listening at: http://0.0.0.0:12729 (4)
+2018-02-20T14:57:06.619902+00:00 app[web.1]: [2018-02-20 14:57:06 +0000] [8] [INFO] Booting worker with pid: 8
+2018-02-20T14:57:06.610637+00:00 app[web.1]: [2018-02-20 14:57:06 +0000] [4] [INFO] Using worker: sync
+2018-02-20T14:57:06.714883+00:00 app[web.1]: [2018-02-20 14:57:06 +0000] [9] [INFO] Booting worker with pid: 9
+2018-02-20T14:57:07.050186+00:00 heroku[web.1]: State changed from starting to up
+2018-02-20T14:57:09.077079+00:00 heroku[router]: at=info method=GET path="/" host=pure-beach-92745.herokuapp.com request_id=76d8ed52-8c0f-4796-b4ec-090322712ed0 fwd="192.140.155.13" dyno=web.1 connect=1ms service=1272ms status=200 bytes=3349 protocol=https
+2018-02-20T14:57:09.051732+00:00 app[web.1]: Here at least
+2018-02-20T14:57:09.051824+00:00 app[web.1]: #getenvvars
+2018-02-20T14:57:09.052304+00:00 app[web.1]: {'filePaths': {'serversFilePath': 'servers.json'}}
+2018-02-20T14:57:09.052361+00:00 app[web.1]: chatservers can be found at servers.json
+2018-02-20T14:57:09.052587+00:00 app[web.1]: Current chat server link is https://thawing-dusk-42565.herokuapp.com/
+2018-02-20T14:57:09.076296+00:00 app[web.1]: 10.33.226.28 - - [20/Feb/2018:14:57:09 +0000] "GET / HTTP/1.1" 200 3155 "https://dashboard.heroku.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:09.718610+00:00 heroku[router]: at=info method=GET path="/static/css/chat_interface.css" host=pure-beach-92745.herokuapp.com request_id=0fb0e962-2809-44e7-9cd2-3b0241b7d3b7 fwd="192.140.155.13" dyno=web.1 connect=5ms service=160ms status=200 bytes=5360 protocol=https
+2018-02-20T14:57:09.733255+00:00 heroku[router]: at=info method=GET path="/static/js/bind.js" host=pure-beach-92745.herokuapp.com request_id=1b983df1-6dde-44f0-bd3d-129ceefbb8b3 fwd="192.140.155.13" dyno=web.1 connect=2ms service=170ms status=200 bytes=2787 protocol=https
+2018-02-20T14:57:09.726615+00:00 app[web.1]: 10.33.226.28 - - [20/Feb/2018:14:57:09 +0000] "GET /static/css/chat_interface.css HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:09.734035+00:00 app[web.1]: 10.142.224.246 - - [20/Feb/2018:14:57:09 +0000] "GET /static/js/bind.js HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:09.757783+00:00 app[web.1]: 10.33.195.131 - - [20/Feb/2018:14:57:09 +0000] "GET /static/css/temporary.css HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:09.757973+00:00 heroku[router]: at=info method=GET path="/static/css/temporary.css" host=pure-beach-92745.herokuapp.com request_id=57f3b5bc-c588-46d4-8dac-7e3f80a549a1 fwd="192.140.155.13" dyno=web.1 connect=2ms service=196ms status=200 bytes=670 protocol=https
+2018-02-20T14:57:10.114872+00:00 heroku[router]: at=info method=GET path="/static/js/script.js" host=pure-beach-92745.herokuapp.com request_id=df61ed99-a8a6-499b-a734-5fae88029880 fwd="192.140.155.13" dyno=web.1 connect=4ms service=7ms status=200 bytes=5891 protocol=https
+2018-02-20T14:57:10.113618+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:57:10 +0000] "GET /static/js/script.js HTTP/1.1" 200 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.438447+00:00 heroku[router]: at=info method=GET path="/" host=pure-beach-92745.herokuapp.com request_id=ae4333e9-f9f4-40f5-8c49-8bbb786d0341 fwd="192.140.155.13" dyno=web.1 connect=2ms service=33ms status=200 bytes=3349 protocol=https
+2018-02-20T14:57:19.406456+00:00 app[web.1]: Here at least
+2018-02-20T14:57:19.407767+00:00 app[web.1]: #getenvvars
+2018-02-20T14:57:19.408672+00:00 app[web.1]: {'filePaths': {'serversFilePath': 'servers.json'}}
+2018-02-20T14:57:19.408816+00:00 app[web.1]: chatservers can be found at servers.json
+2018-02-20T14:57:19.409248+00:00 app[web.1]: Current chat server link is https://thawing-dusk-42565.herokuapp.com/
+2018-02-20T14:57:19.436975+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:57:19 +0000] "GET / HTTP/1.1" 200 3155 "https://dashboard.heroku.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.918935+00:00 heroku[router]: at=info method=GET path="/static/css/temporary.css" host=pure-beach-92745.herokuapp.com request_id=996df753-5433-416c-856c-75d825686f70 fwd="192.140.155.13" dyno=web.1 connect=1ms service=9ms status=304 bytes=279 protocol=https
+2018-02-20T14:57:19.930430+00:00 heroku[router]: at=info method=GET path="/static/js/bind.js" host=pure-beach-92745.herokuapp.com request_id=67f316ed-33f4-4483-926a-b142f5f00bde fwd="192.140.155.13" dyno=web.1 connect=1ms service=17ms status=304 bytes=280 protocol=https
+2018-02-20T14:57:19.897896+00:00 heroku[router]: at=info method=GET path="/static/css/chat_interface.css" host=pure-beach-92745.herokuapp.com request_id=34dbecb5-913d-4d96-8a65-6554b901f2c9 fwd="192.140.155.13" dyno=web.1 connect=1ms service=4ms status=304 bytes=280 protocol=https
+2018-02-20T14:57:19.896429+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:57:19 +0000] "GET /static/css/chat_interface.css HTTP/1.1" 304 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.918271+00:00 app[web.1]: 10.33.226.28 - - [20/Feb/2018:14:57:19 +0000] "GET /static/css/temporary.css HTTP/1.1" 304 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.931258+00:00 app[web.1]: 10.142.224.246 - - [20/Feb/2018:14:57:19 +0000] "GET /static/js/bind.js HTTP/1.1" 304 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.940029+00:00 app[web.1]: 10.33.195.131 - - [20/Feb/2018:14:57:19 +0000] "GET /static/js/script.js HTTP/1.1" 304 - "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:19.942022+00:00 heroku[router]: at=info method=GET path="/static/js/script.js" host=pure-beach-92745.herokuapp.com request_id=57636fc9-bdcb-49ef-a2d1-80bffbd310b7 fwd="192.140.155.13" dyno=web.1 connect=7ms service=13ms status=304 bytes=280 protocol=https
+2018-02-20T14:57:25.747463+00:00 app[web.1]: At chat
+2018-02-20T14:57:25.749971+00:00 app[web.1]: Sending hi  to https://thawing-dusk-42565.herokuapp.com/
+2018-02-20T14:57:33.294289+00:00 heroku[router]: at=info method=POST path="/chat" host=pure-beach-92745.herokuapp.com request_id=8ba7db01-5f58-4e4e-a359-a99597513608 fwd="192.140.155.13" dyno=web.1 connect=3ms service=7547ms status=200 bytes=249 protocol=https
+2018-02-20T14:57:33.285260+00:00 app[web.1]: Response is <Response [200]>
+2018-02-20T14:57:33.290342+00:00 app[web.1]: The response is {'intent': {'name': 'intro', 'confidence': 0.17353390086526094}, 'entities': [], 'text': 'hi'}
+2018-02-20T14:57:33.292122+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:57:33 +0000] "POST /chat HTTP/1.1" 200 65 "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:57:33.290385+00:00 app[web.1]: Intent of the message was intro
+2018-02-20T14:57:33.290466+00:00 app[web.1]: {}
+2018-02-20T14:57:41.167556+00:00 heroku[router]: at=info method=POST path="/chat" host=pure-beach-92745.herokuapp.com request_id=63fad829-46db-454a-a390-6040b17172f9 fwd="192.140.155.13" dyno=web.1 connect=1ms service=77ms status=200 bytes=308 protocol=https
+2018-02-20T14:57:41.091802+00:00 app[web.1]: At chat
+2018-02-20T14:57:41.092400+00:00 app[web.1]: Sending book  a flight  to https://thawing-dusk-42565.herokuapp.com/
+2018-02-20T14:57:41.159996+00:00 app[web.1]: Response is <Response [200]>
+2018-02-20T14:57:41.160459+00:00 app[web.1]: The response is {'intent': {'name': 'flight-book-request-main', 'confidence': 0.10538868832899351}, 'entities': [], 'text': 'book  a flight'}
+2018-02-20T14:57:41.160466+00:00 app[web.1]: Intent of the message was flight-book-request-main
+2018-02-20T14:57:41.160571+00:00 app[web.1]: {}
+2018-02-20T14:57:41.160896+00:00 app[web.1]: Current chat server link is https://radiant-mesa-12222.herokuapp.com/
+2018-02-20T14:57:41.166924+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:57:41 +0000] "POST /chat HTTP/1.1" 200 123 "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:58:03.724958+00:00 app[web.1]: At chat
+2018-02-20T14:58:03.725774+00:00 app[web.1]: Sending from hyderabad to delhi on 24th February  to https://thawing-dusk-42565.herokuapp.com/
+2018-02-20T14:58:03.837206+00:00 app[web.1]: Response is <Response [200]>
+2018-02-20T14:58:03.841452+00:00 app[web.1]: The response is {'intent': {'name': 'flight-book-request-main', 'confidence': 0.01356598663115206}, 'entities': [], 'text': 'from hyderabad to delhi on 24th February'}
+2018-02-20T14:58:03.841873+00:00 app[web.1]: Intent of the message was flight-book-request-main
+2018-02-20T14:58:03.841948+00:00 app[web.1]: {}
+2018-02-20T14:58:03.842990+00:00 app[web.1]: Current chat server link is https://radiant-mesa-12222.herokuapp.com/
+2018-02-20T14:58:03.847616+00:00 app[web.1]: 10.101.133.97 - - [20/Feb/2018:14:58:03 +0000] "POST /chat HTTP/1.1" 200 123 "https://pure-beach-92745.herokuapp.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+2018-02-20T14:58:03.848640+00:00 heroku[router]: at=info method=POST path="/chat" host=pure-beach-92745.herokuapp.com request_id=9ff94ee8-7fe4-412d-a81e-cc5de55f9035 fwd="192.140.155.13" dyno=web.1 connect=1ms service=125ms status=200 bytes=308 protocol=https
+2018-02-20T15:02:40.707031+00:00 app[web.1]: At chat
+2018-02-20T15:02:40.710055+00:00 app[web.1]: Sending thanks  to https://radiant-mesa-12222.herokuapp.com/

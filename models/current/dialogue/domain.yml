@@ -1,0 +1,104 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_mail
+- utter_ask_price
+- utter_final_bye
+- action_restaurant
+- email_restaurant_details
+- action_check_location
+- utter_location_notfound
+- utter_foodie_not_working
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- cuisine
+- email
+- price
+forms: []
+intents:
+- greet:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- restaurant_search:
+    use_entities: true
+slots:
+  cuisine:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - chinese
+    - italian
+    - north indian
+    - south indian
+    - american
+    - mexican
+  email:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location_found:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - notfound
+    - tier3
+    - found
+  price:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - lesser than 300
+    - between 300 to 700
+    - more than 700
+templates:
+  utter_ask_cuisine:
+  - text: "What kind of cuisine would you like to have \n 1. Chinese \n 2. Italian\
+      \ \n 3. South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_location:
+  - text: In what location?
+  utter_ask_mail:
+  - text: To what email address should I send the restaurant details
+  - text: Share the recipient email address
+  utter_ask_price:
+  - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between\
+      \ 300 and 700\n3. More than 700"
+  utter_default:
+  - text: default message
+  utter_final_bye:
+  - text: Okay!Bon Appetit!
+  utter_foodie_not_working:
+  - text: Sorry, Foodie is not working in this area. Can you please suggest some other
+      location
+  utter_goodbye:
+  - text: goodbye :(
+  - text: Bye-bye
+  utter_greet:
+  - text: hey there! How may i help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  utter_location_notfound:
+  - text: Sorry, location not found. Please specify the location again

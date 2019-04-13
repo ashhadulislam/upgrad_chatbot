@@ -1,0 +1,17 @@
+{
+	"serverPaths":
+	{
+		"rasaModels":
+		{
+			"mainAIModel":"https://thawing-dusk-42565.herokuapp.com/",
+			"flightAIModel":"https://radiant-mesa-12222.herokuapp.com/",
+			"VPAAIModel":"https://tranquil-chamber-61733.herokuapp.com/"
+
+
+		},
+		"APIpoints":{
+			"goIbiboServer":"https://murmuring-hamlet-14501.herokuapp.com/"
+		}
+
+	}
+}

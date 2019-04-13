@@ -1,0 +1,22 @@
+[
+    {
+        "name": "email",
+        "pattern": "<mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+>$"
+    },
+    {
+        "name": "email",
+        "pattern": "[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+$"
+    },
+    {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+    },
+    {
+        "name": "price",
+        "pattern": "((^)(low|moderate|high))[^\\s]*"
+    },
+    {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+    }
+]
