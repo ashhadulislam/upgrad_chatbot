@@ -96,8 +96,12 @@ Now if you go to your browser and open http://localhost:5090, a chat window will
 ### Running the RASA on Slack
 
 Set up slack as mentioned here
+
 https://www.youtube.com/watch?v=xu6D_vLP5vY
-Also check out this blog for more clarity https://towardsdatascience.com/building-a-conversational-chatbot-for-slack-using-rasa-and-python-part-2-ce7233f2e9e7
+
+Also check out this blog for more clarity 
+
+https://towardsdatascience.com/building-a-conversational-chatbot-for-slack-using-rasa-and-python-part-2-ce7233f2e9e7
 
 First get the rasa action server up and running
 ```sh
