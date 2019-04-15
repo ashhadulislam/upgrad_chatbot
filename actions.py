@@ -36,7 +36,7 @@ class ActionSearchRestaurants(Action):
 			response = 'Showing you top results:' + "\n"
 			for index, row in top5.iterrows():
 				response = response + str(row["restaurant_name"]) + ' (rated ' + row['restaurant_rating'] + ') in ' + row['restaurant_address'] + ' and the average budget for two people ' + str(row['budget_for2people'])+"\n"
-				response = response + "\nShould i mail you the details"
+				# response = response + "\nShould i mail you the details"
 
 		else:
 			response = 'No restaurants found' 
