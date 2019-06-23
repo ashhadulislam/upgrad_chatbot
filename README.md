@@ -9,7 +9,8 @@ Some examples are as follows:
 ```
 User: Hi
 Bot: Hi there! How may I help you?
-User: Can you suggest some good restaurants in kolkata Bot: What kind of cuisine would you like to have?
+User: Can you suggest some good restaurants in kolkata 
+Bot: What kind of cuisine would you like to have?
 1. Chinese 2. Mexican 3. Italian
 4. American 5. Thai
 6. North Indian
