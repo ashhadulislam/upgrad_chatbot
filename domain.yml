@@ -64,7 +64,7 @@ templates:
       # - title: "American"
       #   payload: "american"
   utter_ask_price: 
-    - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between 300 and 700\n3. More than 700"
+    - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between 300 to 700\n3. More than 700"
       # buttons:
       # - title: "lesser than 300"
       #   payload: "lesser than 300"
